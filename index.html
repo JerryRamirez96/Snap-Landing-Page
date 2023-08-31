@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <div class="navbar">
+            <div class="logo">
+              <a href="#"><img src="./images/logo.svg" /></a>
+            </div>
+            <ul class="links">
+              <li>
+                <div class="arrow-flex">
+                  <a href="#">Features</a>
+                  <div class="down-arrow">
+                    <img src="./images/icon-arrow-down.svg" />
+                  </div>
+                  <div class="up-arrow">
+                    <img src="./images/icon-arrow-up.svg" />
+                  </div>
+                </div>
+                <ul class="dropdown-menu-features">
+                  <li>
+                    <a href="#"
+                      ><img src="./images/icon-todo.svg" /><span>Todo</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/icon-calendar.svg" /><span
+                        >Calendar</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/icon-reminders.svg" /><span
+                        >Reminders</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/icon-planning.svg" /><span
+                        >Planning</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="arrow-flex">
+                  <a href="#">Company</a>
+                  <div class="down-arrow-company">
+                    <img src="./images/icon-arrow-down.svg" />
+                  </div>
+                  <div class="up-arrow-company">
+                    <img src="./images/icon-arrow-up.svg" />
+                  </div>
+                </div>
+                <ul class="dropdown-menu-company">
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+            <div class="buttons">
+              <button type="button" class="login-btn">Login</button>
+              <button type="button" class="register-btn">Register</button>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Nav -->
+        <div class="header-container-mobile">
+          <div class="navbar-mobile">
+            <div class="mobile-nav">
+              <div class="logo">
+                <a href="#"><img src="./images/logo.svg" /></a>
+              </div>
+              <div>
+                <span class="openbtn"
+                  ><img src="./images/icon-menu.svg"
+                /></span>
+              </div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+              <a href="#" class="closebtn"
+                ><img src="./images/icon-close-menu.svg"
+              /></a>
+              <ul class="mobile-links">
+                <li>
+                  <div class="arrow-flex">
+                    <a href="#">Features</a>
+                    <div class="mobile-down-arrow">
+                      <img src="./images/icon-arrow-down.svg" />
+                    </div>
+                    <div class="mobile-up-arrow">
+                      <img src="./images/icon-arrow-up.svg" />
+                    </div>
+                  </div>
+                  <ul class="mobile-dropdown-menu-features">
+                    <li>
+                      <a href="#"
+                        ><img src="./images/icon-todo.svg" /><span
+                          >Todo</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/icon-calendar.svg" /><span
+                          >Calendar</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/icon-reminders.svg" /><span
+                          >Reminders</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/icon-planning.svg" /><span
+                          >Planning</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="arrow-flex">
+                    <a href="#">Company</a>
+                    <div class="mobile-down-arrow-company">
+                      <img src="./images/icon-arrow-down.svg" />
+                    </div>
+                    <div class="mobile-up-arrow-company">
+                      <img src="./images/icon-arrow-up.svg" />
+                    </div>
+                  </div>
+                  <ul class="mobile-dropdown-menu-company">
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Blog</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="flex-parent-hero-img-text-content">
+          <div class="main-hero-img">
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="./images/image-hero-mobile.png"
+                width="375"
+                height="300"
+                class="mobile-hero-img"
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="./images/image-hero-desktop.png"
+                width="70%"
+              />
+              <img src="./images/image-hero-desktop.png" />
+            </picture>
+          </div>
+          <div class="hero-text-content">
+            <h1>Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="learn-more-btn" type="button">Learn More</button>
+            <div class="clients-imgs">
+              <img src="./images/client-databiz.svg" width="88" height="18" />
+              <img
+                src="./images/client-audiophile.svg"
+                width="53"
+                height="22"
+              />
+              <img src="./images/client-meet.svg" width="66" height="17" />
+              <img src="./images/client-maker.svg" width="61" height="19" />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
